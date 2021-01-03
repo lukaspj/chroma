@@ -6,13 +6,13 @@ import (
 	"github.com/alecthomas/chroma/lexers/internal"
 )
 
-// TypeScript lexer.
+// TorqueScript lexer.
 var TorqueScript = internal.Register(MustNewLexer(
 	&Config{
-		Name:      "TypeScript",
-		Aliases:   []string{"ts", "tsx", "typescript"},
-		Filenames: []string{"*.ts", "*.tsx"},
-		MimeTypes: []string{"text/x-typescript"},
+		Name:      "TorqueScript",
+		Aliases:   []string{"tscript", "torquescript"},
+		Filenames: []string{"*.tscript", "*.mis", "*.gui"},
+		MimeTypes: []string{"text/x-torquescript"},
 		DotAll:    true,
 		EnsureNL:  true,
 	},
